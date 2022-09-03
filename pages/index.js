@@ -26,7 +26,7 @@ export default function Home() {
         {/* <Announcement /> */}
         <Header />
 
-        <Hiro />
+        <Hiros />
         <Randevu />
         <Services />
         <BrandSlider
