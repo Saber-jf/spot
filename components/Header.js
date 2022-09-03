@@ -33,32 +33,30 @@ export default function Header() {
         <div className="">
           <div className="w-full ">
             <div
-              className={` flex h-screen ${
+              className={`flex justify-between h-screen ${
                 hambur ? "w-[80%]" : "w-0"
               }   transition-all overflow-hidden bg-[#ff9900] fixed top-0 z-30 `}
             >
               <div>
-                <div className="pl-6 pt-6 space-y-8 mt-[100px] ">
-                  <h1 className="text-[18px] font-serif font-semibold ">
+                <div
+                  className={`${
+                    !hambur ? "hidden" : "block"
+                  } pl-6 pt-6 space-y-8 mt-[100px] text-[18px]  `}
+                >
+                  <h1 className=" font-serif font-semibold ">
                     Tıkla Ara Bilgi Al
                   </h1>
-                  <h1 className="text-[18px] font-serif font-semibold ">
+                  <h1 className=" font-serif font-semibold ">
                     WhatsApp Resim Yolla
                   </h1>
-                  <h1 className="text-[18px] font-serif font-semibold ">
-                    Hizmetler
-                  </h1>
-                  <h1 className="text-[18px] font-serif font-semibold ">
-                    İletişim
-                  </h1>
-                  <h1 className="text-[18px] font-serif font-semibold ">
-                    Hakkimizda
-                  </h1>
+                  <h1 className=" font-serif font-semibold ">Hizmetler</h1>
+                  <h1 className=" font-serif font-semibold ">İletişim</h1>
+                  <h1 className="s font-serif font-semibold ">Hakkimizda</h1>
                 </div>
               </div>
               <div
                 onClick={() => setHambur(!hambur)}
-                className={`${!hambur && "hidden"} z-50 ml-20 mt-16`}
+                className={`${!hambur && "hidden"} z-50 flex mr-6   mt-16`}
               >
                 <BsPlusLg
                   style={{

@@ -11,11 +11,11 @@ export default function ServiceComponent({ value }) {
               <Image src={`${service.image}`} width={100} height={100} />
             </div>
           </div>
-          <div className="pl-2 col-span-3  ">
+          <div className="pl-6 col-span-4 ">
             <h1 className="capitalize text-[20px] font-bold text-[#333333] mb-4">
               {service.title}
             </h1>
-            <p className="pr-8 text-justify">{service.details}</p>
+            <p className="pr-8  ">{service.details}</p>
           </div>
         </div>
       ))}

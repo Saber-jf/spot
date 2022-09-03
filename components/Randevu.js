@@ -41,7 +41,7 @@ export default function Randevu() {
                 <BsFillTelephoneOutboundFill style={{ fontSize: "25px" }} />
               </span>
               <div className="flex flex-col items-center space-y-4">
-                <button className="w-[100px] bg-red-500 rounded-lg ">
+                <button className="w-[100px] bg-red-500 rounded-lg  text-white">
                   Ara
                 </button>
 
@@ -54,7 +54,7 @@ export default function Randevu() {
                 <BsWhatsapp style={{ fontSize: "25px" }} />
               </span>
               <div className="flex flex-col items-center space-y-4">
-                <button className="w-[100px] bg-red-500 rounded-lg ">
+                <button className="w-[100px] bg-red-500 rounded-lg text-white ">
                   Ara
                 </button>
 
@@ -66,7 +66,7 @@ export default function Randevu() {
                 <BsInstagram style={{ fontSize: "25px" }} />
               </span>
               <div className="flex flex-col items-center space-y-4">
-                <button className="w-[100px] bg-red-500 rounded-lg ">
+                <button className="w-[100px] bg-red-500 rounded-lg text-white">
                   Bak
                 </button>
 

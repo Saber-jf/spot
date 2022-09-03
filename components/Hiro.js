@@ -12,7 +12,7 @@ import "swiper/css/navigation";
 import { Autoplay, Pagination, Navigation } from "swiper";
 export default function Hiro() {
   return (
-    <div className="w-full px-16 ">
+    <div className="w-full  ">
       <Swiper
         spaceBetween={30}
         centeredSlides={true}
