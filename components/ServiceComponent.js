@@ -7,8 +7,8 @@ export default function ServiceComponent({ value }) {
       {value.map((service) => (
         <div className="bg-[#FDF9F1] grid grid-cols-5 my-6 justify-around md:flex md:flex-col items-center px-2 py-8  md:flex-1 ">
           <div>
-            <div className="col-span-2">
-              <Image src={`${service.image}`} width={200} height={200} />
+            <div className="col-span-2 ">
+              <Image src={`${service.image}`} width={100} height={100} />
             </div>
           </div>
           <div className="pl-2 col-span-3  ">

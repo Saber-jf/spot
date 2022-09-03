@@ -5,7 +5,7 @@ export default function Footer() {
     <div>
       <div className=" bg-yellow-600 mt-10 px-10 ">
         <div className="grid grid-cols-1 md:grid-cols-3 justify-center divide-y-2 md:divide-y-0 md:mx-auto max-w-[1500px] mx-auto ">
-          <div className="mt-10 pb-5  md:px-10 flex flex-col justify-center ">
+          <div className="mt-10 pb-5  md:px-10 flex flex-col md:justify-center ">
             <h1>HAKKIMIZDA</h1>
             <p className="text-justify">
               2. el eşya sektöründe 10 yıllık deneyimiyle hizmet sunan Halim
@@ -15,7 +15,7 @@ export default function Footer() {
               sunmaktadır.
             </p>
           </div>
-          <div className="py-5 md:px-10 flex flex-col justify-center items-center ">
+          <div className="py-5 md:px-10 flex flex-col md:justify-center md:items-center ">
             <h1>Hizmetlerimiz</h1>
             <ul>
               <li>Buzdolabı 2. El alımı ve Satış</li>
@@ -25,7 +25,7 @@ export default function Footer() {
               <li>Beyaz 2. El eşya alımı ve Satışı...</li>
             </ul>
           </div>
-          <div className="pt-5 md:px-10 flex flex-col justify-center items-center">
+          <div className="pt-5 md:px-10 flex flex-col md:justify-center md:items-center">
             <ul>
               <li>Telefon Ara</li>
               <li>Instagram</li>

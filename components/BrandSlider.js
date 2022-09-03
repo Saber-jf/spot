@@ -15,6 +15,16 @@ export default function BrandSlider({ value }) {
   return (
     <div className="w-full px-16 ">
       <Swiper
+        breakpoints={{
+          300: {
+            // width: 576,
+            slidesPerView: 1,
+          },
+          768: {
+            // width: 768,
+            slidesPerView: 3,
+          },
+        }}
         spaceBetween={30}
         centeredSlides={true}
         autoplay={{

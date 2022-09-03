@@ -17,7 +17,7 @@ export default function Randevu() {
               Eşyanizin Fotoğrafını Çekin
             </h1>
           </div>
-          <h1 className=" mx-auto  items-center w-[300px] hidden lg:flex lg:items-center lg:justify-center rounded-xl  bg-[#ff9900] border-2 px-8 h-[50px] text-center ">
+          <h1 className=" text mx-auto  items-center w-[300px] hidden lg:flex lg:items-center lg:justify-center rounded-xl  bg-[#ff9900] border-2 px-8 h-[50px] text-center ">
             hızlı İletişim Bilgileri
           </h1>
           <div>
@@ -35,7 +35,7 @@ export default function Randevu() {
           <h1 className=" w-[300px] lg:hidden bg-[#ff9900] border-2 px-8 py-3 rounded-xl text-center ">
             hızlı İletişim Bilgileri
           </h1>
-          <div className=" w-full flex justify-evenly mt-10 ">
+          <div className=" w-full flex justify-evenly mt-10 md:px-24 ">
             <div className="flex flex-col items-center space-y-4">
               <span className="animate-bounce">
                 <BsFillTelephoneOutboundFill style={{ fontSize: "25px" }} />

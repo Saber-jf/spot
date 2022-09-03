@@ -38,11 +38,10 @@ export default function Home() {
             { img: "/profilo.jpg" },
             { img: "/altus.jpg" },
             { img: "/arcelik.jpg" },
-            { img: "/ariston.jpg" },
+
             { img: "/beko.jpg" },
             { img: "/bosch.jpg" },
             { img: "/grunding.jpg" },
-            { img: "/indesit.jpg" },
           ]}
         />
         <ProductsBox />
