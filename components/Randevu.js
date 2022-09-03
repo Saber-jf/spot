@@ -17,7 +17,9 @@ export default function Randevu() {
               Eşyanizin Fotoğrafını Çekin
             </h1>
           </div>
-
+          <h1 className=" mx-auto  items-center w-[300px] hidden lg:flex lg:items-center lg:justify-center rounded-xl  bg-[#ff9900] border-2 px-8 h-[50px] text-center ">
+            hızlı İletişim Bilgileri
+          </h1>
           <div>
             <div className="flex flex-col items-center space-y-8 ">
               <span>
