@@ -5,17 +5,17 @@ export default function ServiceComponent({ value }) {
   return (
     <div className="md:flex md:space-x-5">
       {value.map((service) => (
-        <div className="bg-[#FDF9F1] grid grid-cols-5 my-6 justify-around md:flex md:flex-col items-center px-2 py-8  md:flex-1 ">
-          <div>
-            <div className="col-span-2 ">
+        <div className="bg-[#FDF9F1] grid grid-cols-7 my-6 justify-around md:flex md:flex-col items-center px-2 py-8  md:flex-1 ">
+          <div className="col-span-2">
+            <div>
               <Image src={`${service.image}`} width={100} height={100} />
             </div>
           </div>
-          <div className="pl-6 col-span-4 ">
-            <h1 className="capitalize text-[20px] font-bold text-[#333333] mb-4">
+          <div className="pl-6 col-span-5">
+            <h1 className="capitalize text-[20px] font-bold text-[#645CAA] mb-4">
               {service.title}
             </h1>
-            <p className="pr-8  ">{service.details}</p>
+            <p className="pr-8  text-[#A084CA]">{service.details}</p>
           </div>
         </div>
       ))}

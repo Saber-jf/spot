@@ -2,14 +2,14 @@ import React, { useState } from "react";
 import Hamburger from "./Hamburger";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { BsPlusLg } from "react-icons/bs";
-import Link from "next/link";
+import Image from "next/image";
 
 export default function Header() {
   const [hambur, setHambur] = useState(false);
   return (
     <>
       <div className="w-full">
-        <div className="flex justify-between items-center p-[50px] relative ">
+        <div className="flex justify-between items-center p-[20px] relative ">
           <div>
             <div
               onClick={() => setHambur(!hambur)}
@@ -17,16 +17,18 @@ export default function Header() {
             >
               <div className={`${hambur && "hidden"} z-50 `}>
                 <GiHamburgerMenu
-                  style={{ fontSize: "28px", color: "#333333" }}
+                  style={{ fontSize: "28px", color: "#645CAA" }}
                 />
               </div>
             </div>
           </div>
-          <div>
-            <h1 className="text-[20px] font-bold text-[#333333] md:hidden ">
-              Spotçu
-            </h1>
+          <div className="flex flex-col justify-center items-center">
+            <div className="w-16 h-12 relative">
+              <Image src={"/logo2.png"} layout="fill" />
+            </div>
+            <h1 className="font-bold text-[#645CAA] text-2xl">Spot Dünyası</h1>
           </div>
+
           <div>
             <h1></h1>
           </div>
@@ -36,38 +38,33 @@ export default function Header() {
             <div
               className={`flex justify-between h-screen ${
                 hambur ? "w-[80%]" : "w-0"
-              }   transition-all overflow-hidden bg-[#ff9900] fixed top-0 z-30 `}
+              }   transition-all duration-500 overflow-hidden bg-[#645CAA] fixed top-0 z-30 pt-[40px] `}
             >
               <div>
                 <div
                   className={`${
                     !hambur ? "hidden" : "block"
-                  } pl-6 pt-6 space-y-8 mt-[100px] text-[18px]  `}
+                  } pl-6 space-y-8 text-[18px]  whitespace-nowrap`}
                 >
-                  <Link href="/">
-                    <h1 className=" font-serif font-semibold ">ANA SAYFA</h1>
-                  </Link>
-                  <h1 className=" font-serif font-semibold ">
+                  <h1 className="font-semibold text-white">
                     Tıkla Ara Bilgi Al
                   </h1>
-                  <h1 className=" font-serif font-semibold ">
+                  <h1 className="font-semibold text-white">
                     WhatsApp Resim Yolla
                   </h1>
-                  <h1 className=" font-serif font-semibold ">Hizmetler</h1>
-                  <h1 className=" font-serif font-semibold ">İletişim</h1>
-                  <Link href="/Hakkimizda ">
-                    <h1 className=" font-serif font-semibold ">HAKKIMIZDA </h1>
-                  </Link>
+                  <h1 className="font-semibold text-white">Hizmetler</h1>
+                  <h1 className="font-semibold text-white">İletişim</h1>
+                  <h1 className="font-semibold text-white">Hakkimizda</h1>
                 </div>
               </div>
               <div
                 onClick={() => setHambur(!hambur)}
-                className={`${!hambur && "hidden"} z-50 flex mr-6   mt-16`}
+                className={`${!hambur && "hidden"} z-50 flex mr-6 `}
               >
                 <BsPlusLg
                   style={{
                     fontSize: "30px",
-                    color: "#333333",
+                    color: "#fff",
                     transform: "rotateZ(45deg)",
                   }}
                 />

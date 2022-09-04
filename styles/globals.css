@@ -28,6 +28,9 @@ a {
     background: black;
   }
 }
+body {
+  font-family: 'Roboto', sans-serif;
+}
 .linear1 {
   background-image: linear-gradient(
     to top,

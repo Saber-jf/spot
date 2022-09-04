@@ -14,23 +14,23 @@ export default function Services() {
                   title: " HIZLI FIYATLANDIRMA",
                   details:
                     "Ürünlerinizi olduğunuz yerden hızlı bir fiyat politikası vererek alıyoruz",
-                  image: "/fast.png",
+                  image: "/time.png",
                 },
                 {
                   title: " UYGUN FİYAT",
                   details:
                     "En uygun ürünleri bizi arayarak fiyat alabilirsiniz, yerinde Expert hizmeti sunuyoruz",
-                  image: "/fiyat.png",
+                  image: "/offer.png",
                 },
                 {
                   title: "HIZLI TESLİMAT",
                   details: "En kaliteli ürünleri bizde bulabilirsiniz.",
-                  image: "/deliver.png",
+                  image: "/delivery-truck 2.png",
                 },
                 {
                   title: "Kalite",
                   details: "En kaliteli ürünleri bizde bulabilirsiniz.",
-                  image: "/best.png",
+                  image: "/favorites.png",
                 },
               ]}
             />{" "}
