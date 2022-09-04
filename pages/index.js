@@ -12,6 +12,7 @@ import Randevu from "../components/Randevu";
 import Services from "../components/Services";
 import SingleProduct from "../components/SingleProduct";
 import styles from "../styles/Home.module.css";
+import { BsWhatsapp } from "react-icons/bs";
 
 export default function Home() {
   return (
@@ -38,13 +39,18 @@ export default function Home() {
             { img: "/profilo.jpg" },
             { img: "/altus.jpg" },
             { img: "/arcelik.jpg" },
-
             { img: "/beko.jpg" },
             { img: "/bosch.jpg" },
             { img: "/grunding.jpg" },
           ]}
         />
         <ProductsBox />
+        <button className="w-20 h-20 bg-[#25d366] rounded-full fixed bottom-4 right-4 z-50 flex justify-center items-center">
+          <BsWhatsapp
+            style={{ fontSize: "40px" }}
+            className="text-[#fff] drop-shadow-md"
+          />
+        </button>
       </div>
       <Footer />
     </>
