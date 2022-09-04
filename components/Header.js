@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Hamburger from "./Hamburger";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { BsPlusLg } from "react-icons/bs";
+import Link from "next/link";
 
 export default function Header() {
   const [hambur, setHambur] = useState(false);
@@ -43,6 +44,9 @@ export default function Header() {
                     !hambur ? "hidden" : "block"
                   } pl-6 pt-6 space-y-8 mt-[100px] text-[18px]  `}
                 >
+                  <Link href="/">
+                    <h1 className=" font-serif font-semibold ">ANA SAYFA</h1>
+                  </Link>
                   <h1 className=" font-serif font-semibold ">
                     Tıkla Ara Bilgi Al
                   </h1>
@@ -51,7 +55,9 @@ export default function Header() {
                   </h1>
                   <h1 className=" font-serif font-semibold ">Hizmetler</h1>
                   <h1 className=" font-serif font-semibold ">İletişim</h1>
-                  <h1 className="s font-serif font-semibold ">Hakkimizda</h1>
+                  <Link href="/Hakkimizda ">
+                    <h1 className=" font-serif font-semibold ">HAKKIMIZDA </h1>
+                  </Link>
                 </div>
               </div>
               <div
