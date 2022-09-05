@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function SingleProduct() {
   return (
@@ -15,7 +16,9 @@ export default function SingleProduct() {
               En Uygun ve En Kaliteli Buzdolapları Burda
             </p>
             <div className="bg-[#E3C770] w-[170px] text-white h-[48px] px-4 flex items-center justify-center mt-4 rounded-xl font-semibold  ">
-              <button>Incele</button>
+              <Link href="/Buzdolabi">
+                <button>Incele</button>
+              </Link>
             </div>
           </div>
         </div>
@@ -31,7 +34,9 @@ export default function SingleProduct() {
               En Uygun ve En Kaliteli Buzdolapları Burda
             </p>
             <div className="bg-[#E3C770] w-[170px] text-white h-[48px] px-4 flex items-center justify-center mt-4 rounded-xl font-semibold  ">
-              <button>Incele</button>
+              <Link href="/Camasir">
+                <button>Incele</button>
+              </Link>
             </div>
           </div>
         </div>
@@ -46,8 +51,11 @@ export default function SingleProduct() {
             <p className="font-semibold text-[#A084CA] drop-shadow-lg">
               En Uygun ve En Kaliteli Buzdolapları Burda
             </p>
+
             <div className="bg-[#E3C770] w-[170px] text-white h-[48px] px-4 flex items-center justify-center mt-4 rounded-xl font-semibold  ">
-              <button>Incele</button>
+              <Link href="/Bulasik">
+                <button>Incele</button>
+              </Link>
             </div>
           </div>
         </div>

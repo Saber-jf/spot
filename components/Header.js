@@ -3,6 +3,7 @@ import Hamburger from "./Hamburger";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { BsPlusLg } from "react-icons/bs";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Header() {
   const [hambur, setHambur] = useState(false);
@@ -22,12 +23,16 @@ export default function Header() {
               </div>
             </div>
           </div>
-          <div className="flex flex-col justify-center items-center">
-            <div className="w-16 h-12 relative">
-              <Image src={"/logo2.png"} layout="fill" />
+          <Link href="/">
+            <div className="flex flex-col justify-center items-center cursor-pointer ">
+              <div className="w-16 h-12 relative">
+                <Image src={"/logo2.png"} layout="fill" />
+              </div>
+              <h1 className="font-bold text-[#645CAA] text-2xl">
+                Spot Dünyası
+              </h1>
             </div>
-            <h1 className="font-bold text-[#645CAA] text-2xl">Spot Dünyası</h1>
-          </div>
+          </Link>
 
           <div>
             <h1></h1>
@@ -54,7 +59,9 @@ export default function Header() {
                   </h1>
                   <h1 className="font-semibold text-white">Hizmetler</h1>
                   <h1 className="font-semibold text-white">İletişim</h1>
-                  <h1 className="font-semibold text-white">Hakkimizda</h1>
+                  <Link href="/Hakkimizda ">
+                    <h1 className="font-semibold text-white">HAKKIMIZDA </h1>
+                  </Link>
                 </div>
               </div>
               <div
