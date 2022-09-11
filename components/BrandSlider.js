@@ -35,8 +35,8 @@ export default function BrandSlider({ value }) {
         modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper"
       >
-        {value.map((brand) => (
-          <SwiperSlide>
+        {value.map((brand, index) => (
+          <SwiperSlide key={index}>
             <div className="px-4 flex justify-center ">
               <div className="col-span-2">
                 <Image src={`${brand.img}`} width={380} height={164} />
