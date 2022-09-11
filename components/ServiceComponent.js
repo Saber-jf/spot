@@ -4,14 +4,14 @@ import Image from "next/image";
 export default function ServiceComponent({ value }) {
   return (
     <div className="md:flex md:space-x-5">
-      {value.map((service, index) => (
+      {value.map((service, key) => (
         <div
-          key={index}
+          key={key}
           className="bg-[#FDF9F1] grid grid-cols-7 my-6 justify-around md:flex md:flex-col items-center px-2 py-8  md:flex-1 "
         >
           <div className="col-span-2">
             <div>
-              <Image src={`${service.image}`} width={100} height={100} />
+              <Image src={`${service.image}`} width={150} height={150} />
             </div>
           </div>
           <div className="pl-6 col-span-5">

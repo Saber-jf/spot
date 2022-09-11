@@ -13,6 +13,7 @@ import Services from "../components/Services";
 import SingleProduct from "../components/SingleProduct";
 import styles from "../styles/Home.module.css";
 import { BsWhatsapp } from "react-icons/bs";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -45,12 +46,18 @@ export default function Home() {
           ]}
         />
         <ProductsBox />
-        <button className="w-20 h-20 bg-[#25d366] rounded-full fixed bottom-4 right-4 z-50 flex justify-center items-center">
-          <BsWhatsapp
-            style={{ fontSize: "40px" }}
-            className="text-[#fff] drop-shadow-md"
-          />
-        </button>
+        <div className="fixed bottom-4 right-4 z-50 flex-col gap-4">
+          <Link href="tel:+9005327842384">
+            <button className="w-20 h-20 bg-[#25d366] mb-4 rounded-full flex justify-center items-center md:w-32 md:h-32">
+              <BsWhatsapp className="text-[#fff] drop-shadow-md text-[40px] md:text-[60px]" />
+            </button>
+          </Link>
+          <Link href={"https://wa.me/+9005327842384"}>
+            <button className="w-20 h-20 bg-[#25d366] rounded-full flex justify-center items-center md:w-32 md:h-32">
+              <BsWhatsapp className="text-[#fff] drop-shadow-md text-[40px] md:text-[60px]" />
+            </button>
+          </Link>
+        </div>
       </div>
       <Footer />
     </>
