@@ -28,14 +28,14 @@ export default function Header() {
               <div className="w-16 h-12 relative">
                 <Image src={"/logo2.png"} layout="fill" />
               </div>
-              <h1 className="font-bold text-[#645CAA] text-xl">
+              <div className="font-bold text-[#645CAA] text-xl">
                 İstanbul Spot Dünyası
-              </h1>
+              </div>
             </div>
           </Link>
 
           <div>
-            <h1></h1>
+            <div></div>
           </div>
         </div>
         <div className="">
@@ -51,16 +51,16 @@ export default function Header() {
                     !hambur ? "hidden" : "block"
                   } pl-6 space-y-8 text-[18px]  whitespace-nowrap`}
                 >
-                  <h1 className="font-semibold text-white">
+                  <div className="font-semibold text-white">
                     Tıkla Ara Bilgi Al
-                  </h1>
-                  <h1 className="font-semibold text-white">
+                  </div>
+                  <div className="font-semibold text-white">
                     WhatsApp Resim Yolla
-                  </h1>
-                  <h1 className="font-semibold text-white">Hizmetler</h1>
-                  <h1 className="font-semibold text-white">İletişim</h1>
+                  </div>
+                  <div className="font-semibold text-white">Hizmetler</div>
+                  <div className="font-semibold text-white">İletişim</div>
                   <Link href="/Hakkimizda ">
-                    <h1 className="font-semibold text-white">HAKKIMIZDA </h1>
+                    <div className="font-semibold text-white">HAKKIMIZDA </div>
                   </Link>
                 </div>
               </div>

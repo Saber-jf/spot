@@ -10,17 +10,20 @@ export default function BigHeader() {
         </div>
         <div className="w-full max-w-[800px] flex justify-between mx-auto py-8 text-[18px] font-bold   ">
           <Link href="/">
-            <h1 className="cursor-pointer">ANA SAYFA</h1>
+            <span className="cursor-pointer">ANA SAYFA</span>
           </Link>
-
-          <h1 className="cursor-pointer">HIZMETLER</h1>
-          <h1 className="cursor-pointer">RANDEVU AL</h1>
-
-          <Link href="/Hakkimizda ">
-            <h1 className="cursor-pointer">HAKKIMIZDA </h1>
+          <Link href="#service">
+            <span className="cursor-pointer">HIZMETLER</span>
           </Link>
-
-          <h1 className="cursor-pointer">İLETİŞİM</h1>
+          <Link href={"https://wa.me/+9005327842384"}>
+            <span className="cursor-pointer">RANDEVU AL</span>
+          </Link>
+          <Link href="/Hakkimizda">
+            <span className="cursor-pointer">HAKKIMIZDA </span>
+          </Link>
+          <Link href="#contact">
+            <span className="cursor-pointer">İLETİŞİM</span>
+          </Link>
         </div>
       </div>
     </div>
