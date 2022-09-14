@@ -3,25 +3,38 @@ import BigHeader from "../../components/BigHeader";
 import Footer from "../../components/Footer";
 import Image from "next/image";
 import Header from "../../components/Header";
-
+import { BsWhatsapp, BsFillTelephoneOutboundFill } from "react-icons/bs";
+import Link from "next/link";
 export default function index() {
   return (
     <div>
       <BigHeader />
       <Header />
+      <div className="fixed bottom-4 right-4 z-50 flex-col gap-4">
+        <Link href="tel:+9005327842384">
+          <button className="w-16 h-16 bg-[#d37c25] mb-4 rounded-full flex justify-center items-center md:w-32 md:h-32">
+            <BsFillTelephoneOutboundFill className="text-[#fff] drop-shadow-md text-[30px] md:text-[60px]" />
+          </button>
+        </Link>
+        <Link href={"https://wa.me/+9005327842384"}>
+          <button className="w-16 h-16 bg-[#25d366] rounded-full flex justify-center items-center md:w-32 md:h-32">
+            <BsWhatsapp className="text-[#fff] drop-shadow-md text-[30px] md:text-[60px]" />
+          </button>
+        </Link>
+      </div>
       <div>
-        <div className=" flex justify-center mt-10 ">
+        <div className=" flex justify-center">
           <Image src="/tamphoto.jpg" alt="me" width={612} height={408} />
         </div>
         <div className="p-4 max-w-[800px] mx-auto">
           <p>
-            kadikoy Spot Eşya kurulduğu günden itibaren müşterilerine ikinci el
-            eşya sektöründe kaliteli hizmet vermek adına sürekli olarak
-            çalışmalar yürütmektedir.
+            İstanbul Spot Dünyası Eşya kurulduğu günden itibaren müşterilerine
+            ikinci el eşya sektöründe kaliteli hizmet vermek adına sürekli
+            olarak çalışmalar yürütmektedir.
             <br></br>
             <br></br>
-            kadikoy Spot Eşya ikinci el spot eşya sektöründe geçmişe dayanan
-            tecrübeleri sayesinde piyasada lider kuruluşlar arasında yer
+            İstanbul Spot Dünyası Eşya ikinci el spot eşya sektöründe geçmişe
+            dayanan tecrübeleri sayesinde piyasada lider kuruluşlar arasında yer
             almaktadır.
             <br></br>
             <br></br>

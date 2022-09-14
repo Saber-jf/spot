@@ -11,13 +11,13 @@ import { Autoplay, EffectCards } from "swiper";
 
 export default function Comments() {
   return (
-    <div className="comment px-16 md:px-32 lg:px-64  my-16 container mx-auto">
+    <div className="comment px-16 md:px-32 lg:px-64  my-16 container mx-auto overflow-hidden">
       <h2 className="my-8 text-center text-2xl">MÜŞTERİ YORUMLARI</h2>
       <Swiper
         effect={"cards"}
         grabCursor={true}
         autoplay={{
-          delay: 3000,
+          delay: 8000,
           disableOnInteraction: false,
         }}
         loop
@@ -28,14 +28,14 @@ export default function Comments() {
           <div>
             <div className="flex items-center gap-4">
               <img src="/man.png" alt="man" className="w-16" />
-              <h3 className="text-base">Mehmet Yalcin</h3>
+              <h3 className="text-base">Mehmet Yalçın</h3>
             </div>
             <p className="text-sm md:text-base mt-8">
               Evimde 1 oda dolusu kullanılmayan eşya vardı, birçok spotçudan
-              teklif aldım fakat fiyatlar dalga geçer gibiydi. Daha sonra Roy
-              Spot'u gördüm bir kez de şansımı bu şekilde denedim, Müşterisine
-              ve alacağı/satacağı eşyaya hakettiği değeri veren bir firma.
-              yolları açık olsun.
+              teklif aldım fakat fiyatlar dalga geçer gibiydi. Daha sonra Spot
+              dünyasını gördüm bir kez de şansımı bu şekilde denedim,
+              Müşterisine ve alacağı/satacağı eşyaya hakettiği değeri veren bir
+              firma. yolları açık olsun.
             </p>
           </div>
         </SwiperSlide>
@@ -48,7 +48,7 @@ export default function Comments() {
             <p className="text-sm md:text-base mt-8">
               Satın aldığımız her şeyi kendi nakliye araçlarıyla getirip kendi
               ekipleriyle kurdular. bu kadar profesyonel bir iş beklemiyordum.
-              Teşekkürler RoySpot
+              Teşekkürler Spot dünyası
             </p>
           </div>
         </SwiperSlide>
@@ -56,12 +56,12 @@ export default function Comments() {
           <div>
             <div className="flex items-center gap-4">
               <img src="/man.png" alt="man" className="w-16" />
-              <h3 className="text-base">Ali Osmano</h3>
+              <h3 className="text-base">Ali Osman</h3>
             </div>
             <p className="text-sm md:text-base mt-8">
               Ekonomik durumum çok iyi olmadığı için evimi 2. el eşya alarak
-              dizdim. her şeyimi Roy Spot'tan aldım. hiç pişman değilim her şey
-              tertemiz ve sapasağlam.
+              dizdim. her şeyimi Spot dünyasından aldım. hiç pişman değilim her
+              şey tertemiz ve sapasağlam.
             </p>
           </div>
         </SwiperSlide>

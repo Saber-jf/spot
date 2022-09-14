@@ -5,6 +5,7 @@ import { BsWhatsapp } from "react-icons/bs";
 import { BsFillTelephoneOutboundFill } from "react-icons/bs";
 import { BsInstagram } from "react-icons/bs";
 import { BsFillGeoAltFill } from "react-icons/bs";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -36,7 +37,7 @@ export default function Footer() {
               </ul>
             </div>
             <h1 className="mt-5 text-[20px] text-center md:text-start ">
-              Kadikoy spotcu
+              İstanbul Spot Dünyası
             </h1>
           </div>
 
@@ -51,34 +52,41 @@ export default function Footer() {
             </p>
           </div> */}
           <div className="py-5 md:px-10 flex flex-col md:justify-center md:items-start  ">
-            <h1 className="text-[18px] font-semibold ">Hizmetlerimiz</h1>
+            <h2 className="text-[18px] font-semibold ">Servislermiz</h2>
             <ul className="flex flex-col list-disc  md:justify-center ml-4 space-y-2 mt-3 pl-5 ">
-              <li>Buzdolabı 2. El alımı ve Satış...</li>
-              <li>Kombi 2. El alımı ve Satışı...</li>
-              <li>Çamaşır Makinesi 2. El alımı v...</li>
-              <li>Bulaşık Makinesi 2. El alımı v...</li>
-              <li>Beyaz 2. El eşya alımı ve Satışı...</li>
+              <Link href={"/buzdolabi"}>
+                <li>Buzdolabı 2. El alımı ve Satış...</li>
+              </Link>
+              <Link href={"/bulasik-makinesi"}>
+                <li>Bulaşık Makinesi 2. El alımı v...</li>
+              </Link>
+              <Link href={"/camasir-makinesi"}>
+                <li>Çamaşır Makinesi 2. El alımı v...</li>
+              </Link>
+              {/* <Link href={"/bulaşık-makinesi"}>
+                <li>Beyaz 2. El eşya alımı ve Satışı...</li>
+              </Link> */}
             </ul>
           </div>
           <div className=" py-5 md:px-10 flex flex-col md:justify-center md:items-start ">
-            <h1 className="text-[18px] font-semibold ">Hizmetlerimiz</h1>
+            <h2 className="text-[18px] font-semibold ">İletişim Bilgileri</h2>
             <ul className="flex flex-col list-disc md:justify-center  space-y-2 mt-3 pl-5 ">
               <li className="flex items-center space-x-2">
                 <BsWhatsapp />
-                <span>05367154561</span>
+                <span>5367906322</span>
               </li>
               <li className="flex items-center space-x-2">
                 <BsFillTelephoneOutboundFill />
-                <span>05367154561</span>
+                <span>5367906322</span>
               </li>
-              <li className="flex items-center space-x-2">
+              {/* <li className="flex items-center space-x-2">
                 <BsInstagram />
                 <span>eco_Spot</span>
-              </li>
-              <li className="flex items-center space-x-2">
+              </li> */}
+              {/* <li className="flex items-center space-x-2">
                 <BsFillGeoAltFill />
                 <span>Kadikoy goztepe sahika sokak</span>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>

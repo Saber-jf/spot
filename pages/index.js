@@ -12,10 +12,10 @@ import Randevu from "../components/Randevu";
 import Services from "../components/Services";
 import SingleProduct from "../components/SingleProduct";
 import styles from "../styles/Home.module.css";
-import { BsWhatsapp } from "react-icons/bs";
+import { BsWhatsapp, BsFillTelephoneOutboundFill } from "react-icons/bs";
 import Link from "next/link";
 import Comments from "../components/Comments";
-import { BsFillTelephoneOutboundFill } from "react-icons/bs";
+import { Fade } from "react-reveal";
 export default function Home() {
   return (
     <>
@@ -30,31 +30,39 @@ export default function Home() {
           <link rel="icon" href="/favicon.ico" />
         </Head>
         {/* <Announcement /> */}
-        <div className="max-w-[1500px] mx-auto">
-          <Header />
-        </div>
-        <Hiro />
-        <div className="max-w-[1500px] w-full mx-auto" id="contact">
-          <Randevu />
-          <div id="service">
-            <Services />
-          </div>
 
-          <BrandSlider
-            value={[
-              { img: "/samsung.jpg" },
-              { img: "/siemens.jpg" },
-              { img: "/vestel.jpg" },
-              { img: "/lg.jpg" },
-              { img: "/profilo.jpg" },
-              { img: "/altus.jpg" },
-              { img: "/arcelik.jpg" },
-              { img: "/beko.jpg" },
-              { img: "/bosch.jpg" },
-              { img: "/grunding.jpg" },
-            ]}
-          />
+        <Header />
+
+        <Hiro />
+
+        <div className="max-w-[1500px] w-full mx-auto" id="contact">
+          <Fade bottom delay={200}>
+            <Randevu />
+          </Fade>
+          <Fade bottom>
+            <div id="service">
+              <Services />
+            </div>
+          </Fade>
+          <Fade left>
+            <BrandSlider
+              value={[
+                { img: "/samsung.jpg" },
+                { img: "/siemens.jpg" },
+                { img: "/vestel.jpg" },
+                { img: "/lg.jpg" },
+                { img: "/profilo.jpg" },
+                { img: "/altus.jpg" },
+                { img: "/arcelik.jpg" },
+                { img: "/beko.jpg" },
+                { img: "/bosch.jpg" },
+                { img: "/grunding.jpg" },
+              ]}
+            />
+          </Fade>
+
           <ProductsBox />
+
           <div className="fixed bottom-4 right-4 z-50 flex-col gap-4">
             <Link href="tel:+9005327842384">
               <button className="w-16 h-16 bg-[#d37c25] mb-4 rounded-full flex justify-center items-center md:w-32 md:h-32">
@@ -69,7 +77,9 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <Comments />
+      <Fade bottom>
+        <Comments />
+      </Fade>
       <Footer />
     </>
   );

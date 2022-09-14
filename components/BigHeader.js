@@ -12,7 +12,7 @@ export default function BigHeader() {
           <Link href="/">
             <span className="cursor-pointer">ANA SAYFA</span>
           </Link>
-          <Link href="#service">
+          <Link href="/#service">
             <span className="cursor-pointer">HIZMETLER</span>
           </Link>
           <Link href={"https://wa.me/+9005327842384"}>
@@ -21,7 +21,7 @@ export default function BigHeader() {
           <Link href="/Hakkimizda">
             <span className="cursor-pointer">HAKKIMIZDA </span>
           </Link>
-          <Link href="#contact">
+          <Link href="/#contact">
             <span className="cursor-pointer">İLETİŞİM</span>
           </Link>
         </div>
