@@ -15,10 +15,17 @@ import styles from "../styles/Home.module.css";
 import { BsWhatsapp, BsFillTelephoneOutboundFill } from "react-icons/bs";
 import Link from "next/link";
 import Comments from "../components/Comments";
-import { Fade } from "react-reveal";
+import { Fade, Zoom } from "react-reveal";
+
 export default function Home() {
   return (
     <>
+      <Head>
+        <meta
+          name="google-site-verification"
+          content="pQi-_3EhWYx_RdXiheTOvcWL5yJid0usBuY-uSw-z5w"
+        />
+      </Head>
       <BigHeader />
       <div className="w-full mx-auto">
         <Head>
@@ -64,12 +71,12 @@ export default function Home() {
           <ProductsBox />
 
           <div className="fixed bottom-4 right-4 z-50 flex-col gap-4">
-            <Link href="tel:+9005327842384">
+            <Link href="tel:+9005327842383">
               <button className="w-16 h-16 bg-[#d37c25] mb-4 rounded-full flex justify-center items-center md:w-32 md:h-32">
                 <BsFillTelephoneOutboundFill className="text-[#fff] drop-shadow-md text-[30px] md:text-[60px]" />
               </button>
             </Link>
-            <Link href={"https://wa.me/+9005327842384"}>
+            <Link href={"https://wa.me/+9005367906322"}>
               <button className="w-16 h-16 bg-[#25d366] rounded-full flex justify-center items-center md:w-32 md:h-32">
                 <BsWhatsapp className="text-[#fff] drop-shadow-md text-[30px] md:text-[60px]" />
               </button>
@@ -77,9 +84,9 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <Fade bottom>
+      <Zoom>
         <Comments />
-      </Fade>
+      </Zoom>
       <Footer />
     </>
   );

@@ -15,7 +15,7 @@ export default function BigHeader() {
           <Link href="/#service">
             <span className="cursor-pointer">HIZMETLER</span>
           </Link>
-          <Link href={"https://wa.me/+9005327842384"}>
+          <Link href={"https://wa.me/+9005367906322"}>
             <span className="cursor-pointer">RANDEVU AL</span>
           </Link>
           <Link href="/Hakkimizda">

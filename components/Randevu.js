@@ -92,9 +92,9 @@ export default function Randevu() {
                 Yaz
               </button>
 
-              <span className="text-[#645CAA] drop-shadow-md">05327842384</span>
+              <span className="text-[#645CAA] drop-shadow-md">05327842383</span>
             </div>
-            <div className="flex flex-col items-center space-y-4">
+            {/* <div className="flex flex-col items-center space-y-4">
               <span className="animate-bounce">
                 <BsFillTelephoneOutboundFill
                   style={{ fontSize: "25px" }}
@@ -110,7 +110,7 @@ export default function Randevu() {
                   05353417262
                 </span>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

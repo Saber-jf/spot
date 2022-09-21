@@ -81,7 +81,7 @@ export default function Header() {
                         Tıkla Ara Bilgi Al
                       </div>
                     </Link>
-                    <Link href={"https://wa.me/+9005327842384"}>
+                    <Link href={"https://wa.me/+9005367906322"}>
                       <div className="font-semibold text-white">
                         WhatsApp Resim Yolla
                       </div>

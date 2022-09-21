@@ -59,7 +59,7 @@ export default function SingleProduct() {
               </p>
 
               <div className="bg-[#E3C770] w-[170px] text-white h-[48px] px-4 flex items-center justify-center mt-4 rounded-xl font-semibold  ">
-                <Link href="/bulaşik-makinesi">
+                <Link href="/camasir-makinesi">
                   <button>Incele</button>
                 </Link>
               </div>

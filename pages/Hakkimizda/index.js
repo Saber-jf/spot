@@ -11,12 +11,12 @@ export default function index() {
       <BigHeader />
       <Header />
       <div className="fixed bottom-4 right-4 z-50 flex-col gap-4">
-        <Link href="tel:+9005327842384">
+        <Link href="tel:+9005327842383">
           <button className="w-16 h-16 bg-[#d37c25] mb-4 rounded-full flex justify-center items-center md:w-32 md:h-32">
             <BsFillTelephoneOutboundFill className="text-[#fff] drop-shadow-md text-[30px] md:text-[60px]" />
           </button>
         </Link>
-        <Link href={"https://wa.me/+9005327842384"}>
+        <Link href={"https://wa.me/+9005367906322"}>
           <button className="w-16 h-16 bg-[#25d366] rounded-full flex justify-center items-center md:w-32 md:h-32">
             <BsWhatsapp className="text-[#fff] drop-shadow-md text-[30px] md:text-[60px]" />
           </button>
